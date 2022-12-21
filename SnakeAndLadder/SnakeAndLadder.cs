@@ -44,6 +44,11 @@ namespace SnakeAndLadder
                     Console.WriteLine("Ladder");
                     dice = random.Next(1, 7);
                     position += dice;
+                    //UC5
+                    if (position > 100)
+                    {
+                        position = 100;
+                    }
                     Console.WriteLine("Number in die is {0}", dice);
                     Console.WriteLine("{0} position is {1}", Player, position);
                     Console.WriteLine("");
