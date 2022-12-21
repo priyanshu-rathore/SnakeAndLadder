@@ -26,6 +26,8 @@ namespace SnakeAndLadder
 
             //looping till postion equal to 100 UC4
 
+            int dieCount = 1;
+
             while (position <= 100)
             {
 
@@ -45,13 +47,14 @@ namespace SnakeAndLadder
                     dice = random.Next(1, 7);
                     position += dice;
                     //UC5
-                    if (position > 100)
-                    {
-                        position = 100;
-                    }
+                    //if (position > 100)
+                    //{
+                    //    position = 100;
+                    //}
                     Console.WriteLine("Number in die is {0}", dice);
                     Console.WriteLine("{0} position is {1}", Player, position);
                     Console.WriteLine("");
+                    dieCount++; //UC6 die count
 
                 }
                 else
@@ -66,12 +69,15 @@ namespace SnakeAndLadder
                     Console.WriteLine("Number in die is {0}", dice);
                     Console.WriteLine("{0} postion is {1}", Player, position);
                     Console.WriteLine("");
+                    dieCount++;// UC6 die count
                 }
 
                  
                 
 
             }
+
+            Console.WriteLine("Die is rolled {0} times to win",dieCount);
 
         }
     }
