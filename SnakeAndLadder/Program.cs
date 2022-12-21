@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            SnakeAndLadder.snakeAndLadder();
+            //SnakeAndLadder.snakeAndLadder();
+
+            Players.players();
         }
     }
 }

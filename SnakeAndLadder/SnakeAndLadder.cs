@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace SnakeAndLadder
 {
     internal class SnakeAndLadder
+
     {
+
         public static void snakeAndLadder()
         {
             String Player = "Priyanshu";
@@ -80,5 +82,8 @@ namespace SnakeAndLadder
             Console.WriteLine("Die is rolled {0} times to win",dieCount);
 
         }
-    }
-}
+         
+            }
+        }
+    
+
