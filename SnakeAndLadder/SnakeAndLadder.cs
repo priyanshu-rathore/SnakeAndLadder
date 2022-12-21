@@ -23,7 +23,37 @@ namespace SnakeAndLadder
 
             position += dice;
 
-            Console.WriteLine("{0} position is {1} ",Player,position);
+
+            //checking option UC3
+
+            int check = random.Next(0, 3);
+
+            if(check == 0)
+            {
+                Console.WriteLine("No Play");
+                Console.WriteLine(Player+" postion is "+position);
+            }else if(check == 1)
+            {
+                Console.WriteLine("Ladder");
+                dice = random.Next(1, 7);
+                position += dice;
+                Console.WriteLine("Number in die is {0}",dice);
+                Console.WriteLine("{0} position is {1}",Player,position);
+
+            }
+            else
+            {
+                Console.WriteLine("Snake");
+                dice = random.Next(1, 7);
+                position -= dice;
+                if (position < 0) { 
+                    position = 0;
+                }
+                Console.WriteLine("Number in die is {0}", dice);
+                Console.WriteLine("{0} postion is {1}",Player,position);
+            }
+
+
         }
     }
 }
