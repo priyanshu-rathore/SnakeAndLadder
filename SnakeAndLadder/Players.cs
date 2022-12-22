@@ -18,8 +18,9 @@ namespace SnakeAndLadder
 
             Random random = new Random();
 
-            while (posOne <= 100 || posTwo <= 100)
+            while (posOne < 100 && posTwo < 100)
             {
+                
                 if (count % 2 == 0)
                 {
                     int check = random.Next(0, 2);
@@ -65,7 +66,7 @@ namespace SnakeAndLadder
                     {
                         Console.WriteLine("Ladder");
                         dice = random.Next(1, 7);
-                        posOne += dice;
+                        posTwo += dice;
                         Console.WriteLine(playerTwo + " is at position " + posTwo);
                         Console.WriteLine("");
                     }
