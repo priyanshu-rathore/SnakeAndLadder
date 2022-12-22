@@ -65,7 +65,7 @@ namespace SnakeAndLadder
                     {
                         Console.WriteLine("Ladder");
                         dice = random.Next(1, 7);
-                        posOne += dice;
+                        posTwo += dice;
                         Console.WriteLine(playerTwo + " is at position " + posTwo);
                         Console.WriteLine("");
                     }
